@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>The next decade of American Hospital Dubai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #003B5C;
+    --navy-deep: #001A2E;
+    --navy-mid: #1F4E6E;
+    --navy-soft: #5A7A8E;
+    --accent: #B91C2C;
+    --bg: #FFFFFF;
+    --bg-soft: #FAFAF6;
+    --bg-muted: #F4F2EC;
+    --rule: #DCD9D0;
+    --rule-soft: #EAE8E0;
+    --text: #0E1F2C;
+    --text-muted: #5C6F7E;
+    --text-faint: #97A3AD;
+    --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.55;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection { background: var(--navy); color: #fff; }
+
+  /* ========== Top rail ========== */
+  .rail {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: saturate(140%) blur(8px);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .rail-inner {
+    max-width: 1180px; margin: 0 auto;
+    padding: 14px 28px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12px; letter-spacing: 0.06em;
+  }
+  .rail-mark {
+    font-family: var(--serif); font-weight: 400;
+    font-size: 14px; letter-spacing: 0.02em;
+    color: var(--navy-deep);
+  }
+  .rail-tag {
+    color: var(--text-faint); text-transform: uppercase;
+    font-weight: 500;
+  }
+  .rail-tag .dot {
+    display: inline-block; width: 5px; height: 5px;
+    background: var(--accent); border-radius: 50%;
+    margin-right: 8px; vertical-align: middle;
+  }
+
+  /* ========== Page grid ========== */
+  section {
+    padding: 110px 28px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  section:last-of-type { border-bottom: none; }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  .narrow { max-width: 760px; margin: 0 auto; }
+
+  /* ========== Section header pattern ========== */
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 28px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .eyebrow .num {
+    font-family: var(--serif);
+    color: var(--navy-deep);
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .eyebrow .line {
+    flex: 0 0 40px; height: 1px;
+    background: var(--rule);
+  }
+  h1, h2, h3 {
+    font-family: var(--serif);
+    color: var(--navy-deep);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  h1 { font-size: clamp(48px, 8vw, 92px); font-weight: 300; }
+  h2 { font-size: clamp(34px, 5vw, 56px); margin-bottom: 28px; }
+  h3 { font-size: clamp(20px, 2.4vw, 26px); margin-bottom: 12px; }
+  h2 em { font-style: italic; color: var(--navy-mid); }
+  p { color: var(--text); margin-bottom: 16px; }
+  p.lead {
+    font-size: 19px; line-height: 1.55;
+    color: var(--text);
+    max-width: 680px;
+  }
+  p.muted { color: var(--text-muted); }
+  .small { font-size: 13px; color: var(--text-muted); }
+
+  /* ========== Hero ========== */
+  .hero {
+    min-height: 92vh;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding-top: 80px; padding-bottom: 80px;
+    position: relative;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    color: var(--text-muted); font-size: 12px; letter-spacing: 0.08em;
+    text-transform: uppercase; font-weight: 500;
+  }
+  .hero-top span { display: block; }
+  .hero-top .col-r { text-align: right; }
+  .hero-mid h1 {
+    margin-top: 60px;
+    margin-bottom: 28px;
+    max-width: 1000px;
+  }
+  .hero-mid h1 em {
+    font-style: italic;
+    color: var(--navy-mid);
+  }
+  .hero-mid .deck {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(20px, 2.4vw, 28px);
+    color: var(--text-muted);
+    max-width: 720px;
+    line-height: 1.4;
+  }
+  .hero-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+  }
+  .hero-bottom .label {
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .hero-bottom .value {
+    color: var(--navy-deep);
+    font-family: var(--serif);
+    font-size: 16px;
+  }
+
+  /* ========== Section 2 — moment ========== */
+  .three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+    margin-top: 56px;
+  }
+  .force {
+    border-top: 1px solid var(--navy-deep);
+    padding-top: 24px;
+  }
+  .force-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 28px;
+    color: var(--navy-mid);
+    font-weight: 300;
+    margin-bottom: 18px;
+  }
+  .force h3 { font-size: 22px; margin-bottom: 14px; }
+  .force p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+
+  .closing-line {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(22px, 3vw, 32px);
+    line-height: 1.35;
+    color: var(--navy-deep);
+    max-width: 800px;
+  }
+
+  /* ========== SWOT ========== */
+  .swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    margin-top: 48px;
+    border: 1px solid var(--rule);
+  }
+  .swot-cell {
+    background: var(--bg);
+    padding: 36px 32px;
+    min-height: 280px;
+    position: relative;
+  }
+  .swot-cell.pos { background: #FAFAF6; }
+  .swot-label {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .swot-cell.neg .swot-label { color: var(--navy-mid); }
+  .swot-cell h3 {
+    font-size: 22px; margin-bottom: 18px;
+  }
+  .swot-cell ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+  .swot-cell li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    display: flex; gap: 10px;
+    align-items: flex-start;
+  }
+  .swot-cell li:last-child { border-bottom: none; }
+  .swot-cell li::before {
+    content: "";
+    flex: 0 0 6px;
+    width: 6px; height: 1px;
+    background: var(--navy-mid);
+    margin-top: 11px;
+  }
+
+  /* ========== Matrices ========== */
+  .matrix-block {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: center;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .matrix-block:last-child { border-bottom: none; padding-bottom: 0; }
+  .matrix-text .matrix-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+  .matrix-text h3 { margin-bottom: 18px; }
+  .matrix-text p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+  .matrix-text .insight {
+    margin-top: 18px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+    color: var(--navy-deep);
+    line-height: 1.45;
+    padding-left: 18px;
+    border-left: 2px solid var(--accent);
+  }
+  .matrix-svg-wrap {
+    background: var(--bg-soft);
+    border: 1px solid var(--rule-soft);
+    padding: 24px;
+    border-radius: 2px;
+  }
+  .matrix-svg-wrap svg { width: 100%; height: auto; display: block; }
+
+  /* ========== Objectives ========== */
+  .obj-list {
+    margin-top: 48px;
+    border-top: 1px solid var(--rule);
+  }
+  .obj-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 2fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .obj-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .obj-title {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--navy-deep);
+    line-height: 1.25;
+    font-weight: 400;
+  }
+  .obj-detail {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ========== Strategic system mapping ========== */
+  .map-table {
+    margin-top: 48px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .map-table th, .map-table td {
+    text-align: left;
+    padding: 14px 8px;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: middle;
+  }
+  .map-table thead th {
+    font-weight: 500;
+    color: var(--navy-deep);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--navy-deep);
+    padding-bottom: 14px;
+  }
+  .map-table thead th.proj { width: 38%; }
+  .map-table thead th.obj-h {
+    text-align: center;
+    width: 11%;
+  }
+  .map-table tbody td.proj {
+    color: var(--navy-deep);
+  }
+  .map-table tbody td.proj .pn {
+    color: var(--text-faint);
+    font-family: var(--serif);
+    font-style: italic;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .map-table td.cell {
+    text-align: center;
+  }
+  .map-table .marker {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--navy-deep);
+  }
+  .map-table .marker.strong { background: var(--accent); }
+  .map-table tbody tr.tier {
+    background: var(--bg-soft);
+  }
+  .map-table tbody tr.tier td {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 12px 8px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--accent);
+  }
+
+  /* ========== Project cards ========== */
+  .card-grid {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .pcard {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    padding: 28px;
+    position: relative;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .pcard:hover {
+    border-color: var(--navy-mid);
+    transform: translateY(-2px);
+  }
+  .pcard .pn {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+  .pcard h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .pcard p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin-bottom: 16px;
+  }
+  .pcard .objs {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    font-weight: 500;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .pcard .objs span {
+    color: var(--navy-mid);
+    margin-right: 6px;
+    font-weight: 500;
+  }
+  .pcard.innov {
+    background: var(--bg-soft);
+    border-color: var(--navy-deep);
+  }
+  .pcard.innov .pn { color: var(--accent); }
+
+  /* ========== Sequencing timeline ========== */
+  .timeline {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .yearcol {
+    border-top: 2px solid var(--navy-deep);
+    padding-top: 18px;
+  }
+  .yearcol .ylabel {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .yearcol h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--navy-deep);
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  .yearcol ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+  .yearcol li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  .principles {
+    margin-top: 80px;
+    padding-top: 48px;
+    border-top: 1px solid var(--rule);
+  }
+  .principles h3 {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+  .pgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .principle .num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--accent);
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .principle h4 {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--navy-deep);
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .principle p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+
+  /* ========== Closing ========== */
+  .close-section {
+    background: var(--navy-deep);
+    color: #fff;
+    border-bottom: none;
+    padding: 140px 28px;
+  }
+  .close-section .eyebrow { color: #C8985F; }
+  .close-section h2 { color: #fff; }
+  .close-section h2 em { color: #B6CCD7; }
+  .close-section p { color: #C9D5DC; }
+  .close-section p.lead { color: #DBE5EA; max-width: 680px; }
+  .close-line {
+    margin-top: 60px;
+    padding-top: 36px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    font-size: 13px;
+    color: #8FA3AD;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .close-line .col-r { text-align: right; }
+  .close-line .name {
+    font-family: var(--serif);
+    font-style: italic;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 18px;
+    margin-top: 6px;
+  }
+
+  /* ========== Reveal animation ========== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ========== Mobile ========== */
+  @media (max-width: 880px) {
+    section { padding: 72px 22px; }
+    .rail-inner { padding: 12px 22px; }
+    .hero { min-height: 86vh; padding-top: 60px; padding-bottom: 60px; }
+    .hero-bottom { grid-template-columns: 1fr; gap: 18px; padding-top: 24px; margin-top: 50px; }
+    .three-col { grid-template-columns: 1fr; gap: 28px; margin-top: 40px; }
+    .swot-grid { grid-template-columns: 1fr; }
+    .swot-cell { padding: 28px 22px; min-height: auto; }
+    .matrix-block {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding-bottom: 40px;
+      margin-top: 40px;
+    }
+    .obj-row {
+      grid-template-columns: 60px 1fr;
+      grid-template-rows: auto auto;
+      gap: 8px 16px;
+      padding: 24px 0;
+    }
+    .obj-num { grid-row: 1 / 2; }
+    .obj-title { grid-column: 2 / 3; grid-row: 1 / 2; font-size: 18px; }
+    .obj-detail { grid-column: 1 / 3; grid-row: 2 / 3; }
+    .map-table { font-size: 11px; }
+    .map-table thead th { font-size: 9px; }
+    .map-table th.proj, .map-table thead th.proj { width: 40%; }
+    .map-table thead th.obj-h { width: 12%; padding: 10px 2px; }
+    .map-table th, .map-table td { padding: 10px 4px; }
+    .map-table tbody td.proj .pn { display: block; margin-right: 0; margin-bottom: 2px; }
+    .card-grid { grid-template-columns: 1fr; gap: 18px; margin-top: 36px; }
+    .pcard { padding: 24px; }
+    .timeline { grid-template-columns: 1fr; gap: 28px; margin-top: 36px; }
+    .pgrid { grid-template-columns: 1fr; gap: 28px; }
+    .close-section { padding: 90px 22px; }
+    .close-line { grid-template-columns: 1fr; gap: 24px; }
+    .close-line .col-r { text-align: left; }
+    .closing-line { margin-top: 48px; padding-top: 24px; }
+  }
+
+  @media (max-width: 540px) {
+    h1 { font-size: 44px; }
+    h2 { font-size: 30px; }
+    .hero-mid h1 { margin-top: 36px; }
+    .hero-bottom { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="rail">
+  <div class="rail-inner">
+    <div class="rail-mark">A.H.D — Strategic Blueprint</div>
+    <div class="rail-tag"><span class="dot"></span>Confidential</div>
+  </div>
+</div>
+
+<!-- =================== SECTION 1: HERO =================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <span>
+        Prepared for<br>
+        <span style="color:var(--navy-deep); text-transform:none; letter-spacing:0; font-family:var(--serif); font-style:italic; font-size:14px; margin-top:4px; display:inline-block;">Sherif Beshara, Group CEO</span>
+      </span>
+      <span class="col-r">
+        2026<br>
+        <span style="color:var(--navy-deep); text-transform:none; letter-spacing:0; font-family:var(--serif); font-style:italic; font-size:14px; margin-top:4px; display:inline-block;">Office of the CBGO</span>
+      </span>
+    </div>
+
+    <div class="hero-mid">
+      <h1>The next decade<br>of <em>American Hospital&nbsp;Dubai</em>.</h1>
+      <p class="deck">A strategic blueprint for the Chief Brand, Growth and Innovation Office &mdash; written from outside the institution, for the conversation about its inside.</p>
+    </div>
+
+    <div class="hero-bottom">
+      <div>
+        <div class="label">The argument</div>
+        <div class="value">Twelve projects, one strategic system.</div>
+      </div>
+      <div>
+        <div class="label">The window</div>
+        <div class="value">Twenty-four to thirty-six months.</div>
+      </div>
+      <div>
+        <div class="label">The role</div>
+        <div class="value">Commercial leadership, not marketing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 2: THE MOMENT =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">i.</span>The moment</div>
+    <h2>Three forces. <em>One window.</em></h2>
+    <p class="lead muted">Healthcare in the Gulf is at an inflection point. Family-owned premium institutions either define this decade or get defined by it.</p>
+
+    <div class="three-col">
+      <div class="force">
+        <div class="force-num">01</div>
+        <h3>Insurance reshapes payor economics</h3>
+        <p>Mandatory coverage now reaches nearly all UAE residents. Insurer consolidation is compressing margin on volume care year over year.</p>
+      </div>
+      <div class="force">
+        <div class="force-num">02</div>
+        <h3>Medical tourism scales meaningfully</h3>
+        <p>UAE medical tourism is on a multi-billion dirham trajectory. The platforms that capture the next decade are being built now.</p>
+      </div>
+      <div class="force">
+        <div class="force-num">03</div>
+        <h3>Longevity emerges as a category</h3>
+        <p>A consumer healthcare category that did not exist five years ago is consolidating around two or three regional brands. The window to define it is finite.</p>
+      </div>
+    </div>
+
+    <div class="closing-line">
+      AHD has every structural ingredient required to define this decade. What is missing is the commercial operating system that translates those advantages into category leadership.
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 3: SWOT =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">ii.</span>Where AHD stands today</div>
+    <h2>A clear-eyed <em>read.</em></h2>
+    <p class="lead muted">Strategy starts with honesty. Before any project is justified, the institution has to be seen as it is &mdash; not as marketing presents it.</p>
+
+    <div class="swot-grid">
+      <div class="swot-cell pos">
+        <div class="swot-label">Strengths</div>
+        <h3>Rare, real, and durable</h3>
+        <ul>
+          <li>Inaugural Middle East member of the Mayo Clinic Care Network</li>
+          <li>Three decades of American clinical pedigree, JCI and CAP-accredited</li>
+          <li>254-bed flagship, seven satellites, Dubai Science Park, Expo City coming</li>
+          <li>Family ownership enabling long-horizon decisions PE and sovereign cannot</li>
+          <li>~400K LinkedIn following &mdash; among the strongest in regional healthcare</li>
+        </ul>
+      </div>
+      <div class="swot-cell neg">
+        <div class="swot-label">Weaknesses</div>
+        <h3>Operating system below the asset level</h3>
+        <ul>
+          <li>Patient app reviewed as buggy and unreliable; below institution's stature</li>
+          <li>Telemedicine bolted-on to a separate domain rather than integrated</li>
+          <li>Brand portfolio launched ad hoc without a unifying architecture</li>
+          <li>200+ board-certified specialists invisible publicly &mdash; no named-expert system</li>
+          <li>Marketing organized around campaigns rather than systems and attribution</li>
+        </ul>
+      </div>
+      <div class="swot-cell pos">
+        <div class="swot-label">Opportunities</div>
+        <h3>Time-bounded and material</h3>
+        <ul>
+          <li>Define the longevity category before a competitor or longevity-native does</li>
+          <li>Reframe the 30-office expansion from sales channel to platform business</li>
+          <li>Make the Mayo relationship tangible at every patient touchpoint</li>
+          <li>Capture lifetime value already earned but currently lost between episodes</li>
+          <li>The MD school creates a talent and academic moat no peer will have</li>
+        </ul>
+      </div>
+      <div class="swot-cell neg">
+        <div class="swot-label">Threats</div>
+        <h3>Credible and converging</h3>
+        <ul>
+          <li>Cleveland Clinic Abu Dhabi deepening tertiary capability with sovereign capital</li>
+          <li>Mediclinic, King's College Dubai, Burjeel competing in premium territory</li>
+          <li>Insurer consolidation compressing insurance-funded margin</li>
+          <li>PureHealth and PE-backed operators acquiring scale aggressively</li>
+          <li>Longevity category window plausibly closes within five years</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="closing-line">
+      Stronger raw assets than any competitor for the strategic moment ahead, on commercial infrastructure that does not yet match those assets. The work is to close that gap.
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 4: COMPETITIVE LANDSCAPE =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">iii.</span>The competitive landscape</div>
+    <h2>Three matrices. <em>One unique position.</em></h2>
+    <p class="lead muted">Most healthcare competitive analysis ranks hospitals on a single axis. The reality is more textured. Read across all three matrices to see why AHD&rsquo;s strategic position is unique &mdash; and why it is not yet claimed.</p>
+
+    <!-- MATRIX 1 -->
+    <div class="matrix-block">
+      <div class="matrix-text">
+        <div class="matrix-num">Matrix 01</div>
+        <h3>Premium positioning vs. operating model</h3>
+        <p>Most premium institutions in the GCC have been absorbed into sovereign or private-equity structures. Most family-owned operators have lost premium positioning over time. AHD&rsquo;s quadrant &mdash; premium and family-owned &mdash; is structurally rare.</p>
+        <div class="insight">The freedom to make long-horizon category bets that capital-driven competitors structurally cannot make.</div>
+      </div>
+      <div class="matrix-svg-wrap">
+        <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Premium vs operating model matrix">
+          <!-- axes -->
+          <line x1="80" y1="40" x2="80" y2="420" stroke="#0E1F2C" stroke-width="1"/>
+          <line x1="80" y1="420" x2="500" y2="420" stroke="#0E1F2C" stroke-width="1"/>
+          <!-- quadrant -->
+          <line x1="290" y1="40" x2="290" y2="420" stroke="#DCD9D0" stroke-width="0.8" stroke-dasharray="2,3"/>
+          <line x1="80" y1="230" x2="500" y2="230" stroke="#DCD9D0" stroke-width="0.8" stroke-dasharray="2,3"/>
+          <!-- Y axis label -->
+          <text x="76" y="32" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">PREMIUM</text>
+          <text x="76" y="428" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">MASS</text>
+          <text x="40" y="230" font-family="Fraunces" font-size="11" fill="#0E1F2C" font-style="italic" transform="rotate(-90 40 230)" text-anchor="middle">positioning</text>
+          <!-- X axis label -->
+          <text x="80" y="445" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">FAMILY-OWNED</text>
+          <text x="500" y="445" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">SOVEREIGN / PE</text>
+          <text x="290" y="465" text-anchor="middle" font-family="Fraunces" font-size="11" fill="#0E1F2C" font-style="italic">operating model</text>
+
+          <!-- AHD highlighted -->
+          <circle cx="170" cy="80" r="11" fill="none" stroke="#B91C2C" stroke-width="1.2"/>
+          <circle cx="170" cy="80" r="6" fill="#B91C2C"/>
+          <text x="184" y="78" font-family="Fraunces" font-size="13" fill="#001A2E" font-weight="500">AHD</text>
+          <text x="184" y="92" font-family="DM Sans" font-size="10" fill="#5C6F7E">unclaimed quadrant</text>
+
+          <!-- Cleveland Clinic AD -->
+          <circle cx="430" cy="65" r="5" fill="#003B5C"/>
+          <text x="422" y="56" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Cleveland Clinic AD</text>
+
+          <!-- Mediclinic ME -->
+          <circle cx="380" cy="100" r="5" fill="#003B5C"/>
+          <text x="372" y="92" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Mediclinic ME</text>
+
+          <!-- King's College Dubai -->
+          <circle cx="320" cy="130" r="5" fill="#003B5C"/>
+          <text x="312" y="123" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">King&rsquo;s College Dubai</text>
+
+          <!-- Burjeel -->
+          <circle cx="380" cy="220" r="5" fill="#003B5C"/>
+          <text x="388" y="223" font-family="DM Sans" font-size="11" fill="#0E1F2C">Burjeel</text>
+
+          <!-- NMC / PureHealth -->
+          <circle cx="430" cy="290" r="5" fill="#003B5C"/>
+          <text x="422" y="293" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">NMC / PureHealth</text>
+
+          <!-- Aster -->
+          <circle cx="400" cy="340" r="5" fill="#003B5C"/>
+          <text x="392" y="343" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Aster DM</text>
+
+          <!-- Saudi German -->
+          <circle cx="340" cy="380" r="5" fill="#003B5C"/>
+          <text x="332" y="383" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Saudi German</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- MATRIX 2 -->
+    <div class="matrix-block">
+      <div class="matrix-text">
+        <div class="matrix-num">Matrix 02</div>
+        <h3>Clinical capability vs. consumer experience design</h3>
+        <p>Tertiary clinical capability and consumer-luxury experience design rarely coexist in a single institution. Cleveland Clinic and Mayo lead clinically but design for clinical safety, not luxury. Longevity-native clinics design for luxury but lack tertiary capability.</p>
+        <div class="insight">The opportunity is to occupy the upper-right &mdash; tertiary capability with consumer-luxury experience &mdash; before any competitor does.</div>
+      </div>
+      <div class="matrix-svg-wrap">
+        <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clinical capability vs consumer experience matrix">
+          <line x1="80" y1="40" x2="80" y2="420" stroke="#0E1F2C" stroke-width="1"/>
+          <line x1="80" y1="420" x2="500" y2="420" stroke="#0E1F2C" stroke-width="1"/>
+          <line x1="290" y1="40" x2="290" y2="420" stroke="#DCD9D0" stroke-width="0.8" stroke-dasharray="2,3"/>
+          <line x1="80" y1="230" x2="500" y2="230" stroke="#DCD9D0" stroke-width="0.8" stroke-dasharray="2,3"/>
+
+          <text x="76" y="32" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">TERTIARY</text>
+          <text x="76" y="428" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">PRIMARY</text>
+          <text x="40" y="230" font-family="Fraunces" font-size="11" fill="#0E1F2C" font-style="italic" transform="rotate(-90 40 230)" text-anchor="middle">clinical capability</text>
+
+          <text x="80" y="445" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">TRADITIONAL CLINICAL</text>
+          <text x="500" y="445" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">CONSUMER LUXURY</text>
+          <text x="290" y="465" text-anchor="middle" font-family="Fraunces" font-size="11" fill="#0E1F2C" font-style="italic">experience design</text>
+
+          <!-- Cleveland Clinic AD -->
+          <circle cx="135" cy="65" r="5" fill="#003B5C"/>
+          <text x="143" y="68" font-family="DM Sans" font-size="11" fill="#0E1F2C">Cleveland Clinic AD</text>
+
+          <!-- Mediclinic -->
+          <circle cx="220" cy="115" r="5" fill="#003B5C"/>
+          <text x="228" y="118" font-family="DM Sans" font-size="11" fill="#0E1F2C">Mediclinic</text>
+
+          <!-- King's College -->
+          <circle cx="240" cy="170" r="5" fill="#003B5C"/>
+          <text x="248" y="173" font-family="DM Sans" font-size="11" fill="#0E1F2C">King&rsquo;s College</text>
+
+          <!-- Burjeel -->
+          <circle cx="370" cy="155" r="5" fill="#003B5C"/>
+          <text x="362" y="148" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Burjeel</text>
+
+          <!-- AHD now -->
+          <circle cx="265" cy="125" r="6" fill="#B91C2C" opacity="0.4"/>
+          <text x="265" y="105" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#5C6F7E">AHD today</text>
+
+          <!-- Arrow to AHD target -->
+          <defs>
+            <marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#B91C2C"/>
+            </marker>
+          </defs>
+          <line x1="278" y1="125" x2="395" y2="92" stroke="#B91C2C" stroke-width="1.2" stroke-dasharray="3,3" marker-end="url(#arrow1)"/>
+
+          <!-- AHD target -->
+          <circle cx="405" cy="85" r="11" fill="none" stroke="#B91C2C" stroke-width="1.2"/>
+          <circle cx="405" cy="85" r="6" fill="#B91C2C"/>
+          <text x="395" y="78" text-anchor="end" font-family="Fraunces" font-size="13" fill="#001A2E" font-weight="500">AHD target</text>
+
+          <!-- Longevity-native -->
+          <circle cx="430" cy="345" r="5" fill="#003B5C"/>
+          <text x="422" y="348" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Longevity-native clinics</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- MATRIX 3 -->
+    <div class="matrix-block">
+      <div class="matrix-text">
+        <div class="matrix-num">Matrix 03</div>
+        <h3>Geographic reach vs. patient relationship depth</h3>
+        <p>Bumrungrad has international reach but episodic patient relationships. Longevity-native clinics have longitudinal relationships but single-market focus. The combination &mdash; international platform reach with longitudinal patient relationships &mdash; is structurally vacant.</p>
+        <div class="insight">The strategic move is to occupy that combination before any competitor recognizes it as available.</div>
+      </div>
+      <div class="matrix-svg-wrap">
+        <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geographic reach vs relationship depth matrix">
+          <line x1="80" y1="40" x2="80" y2="420" stroke="#0E1F2C" stroke-width="1"/>
+          <line x1="80" y1="420" x2="500" y2="420" stroke="#0E1F2C" stroke-width="1"/>
+          <line x1="290" y1="40" x2="290" y2="420" stroke="#DCD9D0" stroke-width="0.8" stroke-dasharray="2,3"/>
+          <line x1="80" y1="230" x2="500" y2="230" stroke="#DCD9D0" stroke-width="0.8" stroke-dasharray="2,3"/>
+
+          <text x="76" y="32" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">INTERNATIONAL</text>
+          <text x="76" y="428" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">SINGLE-MARKET</text>
+          <text x="40" y="230" font-family="Fraunces" font-size="11" fill="#0E1F2C" font-style="italic" transform="rotate(-90 40 230)" text-anchor="middle">geographic reach</text>
+
+          <text x="80" y="445" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">EPISODIC</text>
+          <text x="500" y="445" text-anchor="end" font-family="DM Sans" font-size="10" fill="#5C6F7E" font-weight="500" letter-spacing="1">LONGITUDINAL</text>
+          <text x="290" y="465" text-anchor="middle" font-family="Fraunces" font-size="11" fill="#0E1F2C" font-style="italic">relationship depth</text>
+
+          <!-- Bumrungrad -->
+          <circle cx="135" cy="75" r="5" fill="#003B5C"/>
+          <text x="143" y="78" font-family="DM Sans" font-size="11" fill="#0E1F2C">Bumrungrad</text>
+
+          <!-- Apollo -->
+          <circle cx="200" cy="115" r="5" fill="#003B5C"/>
+          <text x="208" y="118" font-family="DM Sans" font-size="11" fill="#0E1F2C">Apollo Hospitals</text>
+
+          <!-- Cleveland Clinic AD -->
+          <circle cx="155" cy="195" r="5" fill="#003B5C"/>
+          <text x="163" y="198" font-family="DM Sans" font-size="11" fill="#0E1F2C">Cleveland Clinic AD</text>
+
+          <!-- Mediclinic -->
+          <circle cx="170" cy="245" r="5" fill="#003B5C"/>
+          <text x="178" y="248" font-family="DM Sans" font-size="11" fill="#0E1F2C">Mediclinic</text>
+
+          <!-- Burjeel -->
+          <circle cx="200" cy="285" r="5" fill="#003B5C"/>
+          <text x="208" y="288" font-family="DM Sans" font-size="11" fill="#0E1F2C">Burjeel</text>
+
+          <!-- AHD now -->
+          <circle cx="200" cy="220" r="6" fill="#B91C2C" opacity="0.4"/>
+          <text x="200" y="245" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#5C6F7E">AHD today</text>
+
+          <!-- Arrow to AHD target -->
+          <defs>
+            <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#B91C2C"/>
+            </marker>
+          </defs>
+          <line x1="213" y1="215" x2="400" y2="92" stroke="#B91C2C" stroke-width="1.2" stroke-dasharray="3,3" marker-end="url(#arrow2)"/>
+
+          <!-- AHD target -->
+          <circle cx="410" cy="85" r="11" fill="none" stroke="#B91C2C" stroke-width="1.2"/>
+          <circle cx="410" cy="85" r="6" fill="#B91C2C"/>
+          <text x="400" y="78" text-anchor="end" font-family="Fraunces" font-size="13" fill="#001A2E" font-weight="500">AHD target</text>
+
+          <!-- Longevity-native -->
+          <circle cx="430" cy="360" r="5" fill="#003B5C"/>
+          <text x="422" y="363" text-anchor="end" font-family="DM Sans" font-size="11" fill="#0E1F2C">Longevity-native clinics</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="closing-line">
+      Read across all three. AHD has the clearest path of any regional institution to occupy a position no single competitor occupies &mdash; premium and family-owned, clinically capable and consumer-luxury, internationally reaching and longitudinally retaining.
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 5: STRATEGIC OBJECTIVES =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">iv.</span>AHD's strategic objectives</div>
+    <h2>Five objectives, <em>drawn from the institution's own commitments.</em></h2>
+    <p class="lead muted">The CBGO does not invent strategy. The strategy already exists in leadership&rsquo;s public commitments and the trajectory the family ownership has chosen. The role&rsquo;s job is to translate it into a coherent commercial system &mdash; and to deliver.</p>
+
+    <div class="obj-list">
+      <div class="obj-row">
+        <div class="obj-num">01</div>
+        <div class="obj-title">Define premium healthcare in the GCC for the next generation</div>
+        <div class="obj-detail">Category leadership, not market share within an existing category. Rooted in &ldquo;patient satisfaction through positive clinical outcomes&rdquo; and the Medicine 3.0 framing.</div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-num">02</div>
+        <div class="obj-title">Build a regional international presence anchored in Dubai</div>
+        <div class="obj-detail">The 30-office program, the AHD Global Initiative, and the explicit commitment to UAE medical tourism leadership point to international reach as structural, not ancillary.</div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-num">03</div>
+        <div class="obj-title">Deepen clinical capability through partnership and innovation</div>
+        <div class="obj-detail">Mayo Clinic Care Network, Mayo Labs, the Cerner AI center, GenetiQ, the AHA Training Center, the future MD school &mdash; capability compounded through partnership rather than built alone.</div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-num">04</div>
+        <div class="obj-title">Serve the Emirati community as a national strategic partner</div>
+        <div class="obj-detail">Alaela aligned with Article Five of the 50-Year Charter. A relationship closer to national health partnership than to commercial healthcare delivery.</div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-num">05</div>
+        <div class="obj-title">Build a long-horizon institution worth its 30-year heritage</div>
+        <div class="obj-detail">Family ownership, patient capital, and a deliberate contrast against PE-driven consolidation. Build something durable across decades rather than optimize a single financial cycle.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 6: STRATEGIC SYSTEM =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">v.</span>The strategic system</div>
+    <h2>Twelve projects, <em>mapped to five objectives.</em></h2>
+    <p class="lead muted">Every project advances at least one strategic objective. Together they advance all five. Twelve is the minimum count that builds a complete commercial operating system without dissipating focus.</p>
+
+    <table class="map-table">
+      <thead>
+        <tr>
+          <th class="proj">Project</th>
+          <th class="obj-h">01</th>
+          <th class="obj-h">02</th>
+          <th class="obj-h">03</th>
+          <th class="obj-h">04</th>
+          <th class="obj-h">05</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tier"><td colspan="6">Foundation &mdash; the operating system</td></tr>
+        <tr><td class="proj"><span class="pn">01</span>Master brand architecture</td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker"></span></td></tr>
+        <tr><td class="proj"><span class="pn">02</span>Premium positioning sharpening</td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker"></span></td></tr>
+        <tr><td class="proj"><span class="pn">03</span>Data and patient relationship platform</td><td class="cell"><span class="marker"></span></td><td class="cell"><span class="marker"></span></td><td class="cell"><span class="marker"></span></td><td class="cell"><span class="marker"></span></td><td class="cell"><span class="marker strong"></span></td></tr>
+        <tr><td class="proj"><span class="pn">04</span>Multi-language digital infrastructure</td><td class="cell"></td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"></td></tr>
+        <tr><td class="proj"><span class="pn">05</span>Domestic satellite expansion playbook</td><td class="cell"><span class="marker"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td></tr>
+        <tr><td class="proj"><span class="pn">06</span>Cash-pay vertical scale-up</td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker"></span></td></tr>
+        <tr><td class="proj"><span class="pn">07</span>B2B revenue activation</td><td class="cell"></td><td class="cell"><span class="marker"></span></td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"></td></tr>
+        <tr class="tier"><td colspan="6">Innovation &mdash; the structural moats</td></tr>
+        <tr><td class="proj"><span class="pn">08</span>Medicine 3.0 productization</td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"><span class="marker"></span></td><td class="cell"></td><td class="cell"></td></tr>
+        <tr><td class="proj"><span class="pn">09</span>Physician personal brand program</td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"><span class="marker"></span></td><td class="cell"></td><td class="cell"></td></tr>
+        <tr><td class="proj"><span class="pn">10</span>International expansion as platform</td><td class="cell"></td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker"></span></td></tr>
+        <tr><td class="proj"><span class="pn">11</span>Patient retention and longitudinal care</td><td class="cell"><span class="marker"></span></td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker strong"></span></td><td class="cell"><span class="marker"></span></td></tr>
+        <tr><td class="proj"><span class="pn">12</span>AI and data commercialization</td><td class="cell"></td><td class="cell"></td><td class="cell"><span class="marker strong"></span></td><td class="cell"></td><td class="cell"><span class="marker"></span></td></tr>
+      </tbody>
+    </table>
+    <p class="small" style="margin-top:18px;">Solid marker &mdash; primary objective advanced. Open marker &mdash; supporting objective.</p>
+  </div>
+</section>
+
+<!-- =================== SECTION 7: FOUNDATION =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">vi.</span>The foundation</div>
+    <h2>Seven projects <em>build the operating system.</em></h2>
+    <p class="lead muted">Foundational projects defend the business and create the platform on which innovation runs. Skipping foundational work for visible innovation is the most common reason institutional transformations fail.</p>
+
+    <div class="card-grid">
+      <div class="pcard">
+        <div class="pn">01</div>
+        <h3>Master brand architecture</h3>
+        <p>One unified system. Most sub-brands consolidated under the master; the few that stay distinct always carry endorsement. Every dirham reinforces a single asset.</p>
+        <div class="objs"><span>Advances</span>01 &middot; 05</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">02</div>
+        <h3>Premium positioning sharpening</h3>
+        <p>Codify the defensible position: thirty years of pedigree, the deepest Mayo relationship in the region, family-owned long-horizon. Propagate it across every touchpoint.</p>
+        <div class="objs"><span>Advances</span>01 &middot; 05</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">03</div>
+        <h3>Data and patient relationship platform</h3>
+        <p>The operating system underneath everything. Identity resolution, unified patient view, marketing automation, attribution. Built scrappy &mdash; not over-engineered.</p>
+        <div class="objs"><span>Advances</span>All five</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">04</div>
+        <h3>Multi-language digital infrastructure</h3>
+        <p>French, Russian, Portuguese, Swahili, Arabic across the master site, market landing pages, patient app, and telemedicine. The backbone the international expansion needs.</p>
+        <div class="objs"><span>Advances</span>02</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">05</div>
+        <h3>Domestic satellite expansion playbook</h3>
+        <p>Repeatable launch system &mdash; catchment, specialty mix, pricing, marketing, ramp curve. Turns each new node from a project into operational excellence.</p>
+        <div class="objs"><span>Advances</span>04 &middot; 01</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">06</div>
+        <h3>Cash-pay vertical scale-up</h3>
+        <p>The Face, Executive Clinic, fertility, dental, dermatology, wellness. Highest-margin square inches of the portfolio. Closest to immediate revenue impact.</p>
+        <div class="objs"><span>Advances</span>01 &middot; 05</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">07</div>
+        <h3>B2B revenue activation</h3>
+        <p>Corporate executive health, embassy panels, insurer preferred-provider, Mayo Labs, the AHD Care Network. Channels developed as structured programs, not relationships.</p>
+        <div class="objs"><span>Advances</span>03 &middot; 02</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 8: INNOVATION =================== -->
+<section style="background:var(--bg-soft);">
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">vii.</span>The innovation</div>
+    <h2>Five projects <em>create the moats.</em></h2>
+    <p class="lead muted">Innovative projects don&rsquo;t defend the business &mdash; they redefine what kind of business AHD is. Each rests on assets the institution already has but does not yet leverage. Each creates a moat that takes years to build and decades to erode.</p>
+
+    <div class="card-grid">
+      <div class="pcard innov">
+        <div class="pn">08</div>
+        <h3>Medicine 3.0 productization</h3>
+        <p>Convert a clinical philosophy into a tiered consumer offering. Discover, Core, Concierge. The Mayo relationship made tangible. Designed against luxury benchmarks. The category-defining bet.</p>
+        <div class="objs"><span>Advances</span>01 &middot; 03</div>
+      </div>
+      <div class="pcard innov">
+        <div class="pn">09</div>
+        <h3>Physician personal brand program</h3>
+        <p>200+ board-certified specialists are AHD&rsquo;s most underused asset. Tiered program: hygiene for all, active voice for sixty to a hundred, named flagship for twenty to forty across priority specialties.</p>
+        <div class="objs"><span>Advances</span>01 &middot; 03</div>
+      </div>
+      <div class="pcard innov">
+        <div class="pn">10</div>
+        <h3>International expansion as platform</h3>
+        <p>Reframe the 30-office program from sales channel to platform business. Shared technology, equity in local feeders, sovereign co-branding, telemedicine spine, Mayo at every node.</p>
+        <div class="objs"><span>Advances</span>02 &middot; 05</div>
+      </div>
+      <div class="pcard innov">
+        <div class="pn">11</div>
+        <h3>Patient retention and longitudinal care</h3>
+        <p>Convert the institution from episodic acute hospital into healthcare relationship platform. Households as the unit, named clinicians as anchors, care plans as the longitudinal product.</p>
+        <div class="objs"><span>Advances</span>04 &middot; 05 &middot; 01</div>
+      </div>
+      <div class="pcard innov">
+        <div class="pn">12</div>
+        <h3>AI and data commercialization</h3>
+        <p>Cerner research, Medicine 3.0 data, Mayo Labs partnership generate proprietary B2B-monetizable data assets. A long-horizon strategic option to preserve and develop incrementally.</p>
+        <div class="objs"><span>Advances</span>03 &middot; 05</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 9: SEQUENCING & PRINCIPLES =================== -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line"></span><span class="num">viii.</span>Sequencing &amp; principles</div>
+    <h2>The sequence <em>is the strategy.</em></h2>
+    <p class="lead muted">Twelve projects do not get built at once. The discipline of sequencing matters more than the speed of launching. Three projects executed brilliantly in year one are worth more than twelve launched mediocrely.</p>
+
+    <div class="timeline">
+      <div class="yearcol">
+        <div class="ylabel">Year one</div>
+        <h4>Foundation, with one breakthrough</h4>
+        <ul>
+          <li>Data platform foundation built scrappy</li>
+          <li>Brand architecture decision and rollout</li>
+          <li>Premium positioning sharpened</li>
+          <li>Multi-language infrastructure for priority markets</li>
+          <li>Medicine 3.0 productization launched</li>
+          <li>Cash-pay verticals: Face, Executive Clinic</li>
+          <li>Physician brand pilots in two specialties</li>
+          <li>Three Tier 1 international offices live</li>
+        </ul>
+      </div>
+      <div class="yearcol">
+        <div class="ylabel">Year two</div>
+        <h4>Scale the system</h4>
+        <ul>
+          <li>Medicine 3.0 reaches Core membership volume</li>
+          <li>Concierge tier launched</li>
+          <li>Physician brand expands across priority specialties</li>
+          <li>International expansion at 18&ndash;22 nodes</li>
+          <li>Equity feeder pipeline activated</li>
+          <li>Telemedicine spine deployed network-wide</li>
+          <li>Longitudinal care launches in two segments</li>
+          <li>Data platform reaches full attribution</li>
+        </ul>
+      </div>
+      <div class="yearcol">
+        <div class="ylabel">Year three</div>
+        <h4>Complete the platform</h4>
+        <ul>
+          <li>International expansion at full thirty-office scale</li>
+          <li>Platform economics demonstrate over sales channel</li>
+          <li>Longitudinal program across all priority segments</li>
+          <li>Predictive intelligence layer operational</li>
+          <li>AI and data commercialization piloted</li>
+          <li>Strategic system functioning as a coordinated whole</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="principles">
+      <h3>Six operating principles</h3>
+      <div class="pgrid">
+        <div class="principle">
+          <div class="num">i</div>
+          <h4>Concentration over coverage</h4>
+          <p>Eight Tier 1 offices done brilliantly are worth more than thirty done mediocrely. Every project chooses depth over breadth.</p>
+        </div>
+        <div class="principle">
+          <div class="num">ii</div>
+          <h4>Foundation before innovation</h4>
+          <p>Foundational projects create the platform on which innovation runs. Skipping them is the most common transformation failure mode.</p>
+        </div>
+        <div class="principle">
+          <div class="num">iii</div>
+          <h4>Lifetime over episode</h4>
+          <p>Every commercial decision is evaluated against lifetime value, household value, and longitudinal relationship potential.</p>
+        </div>
+        <div class="principle">
+          <div class="num">iv</div>
+          <h4>Data over intuition</h4>
+          <p>Marketing investment is defended by attribution. Project performance is measured. Budget allocation is analytical, not political.</p>
+        </div>
+        <div class="principle">
+          <div class="num">v</div>
+          <h4>Mayo as moat</h4>
+          <p>The Mayo Clinic relationship is AHD&rsquo;s most defensible long-term asset. Every project either deepens it or extracts value from it.</p>
+        </div>
+        <div class="principle">
+          <div class="num">vi</div>
+          <h4>Family ownership as advantage</h4>
+          <p>Not a constraint to apologize for &mdash; a competitive position capital-driven competitors cannot match. The CBGO leverages it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SECTION 10: CLOSING =================== -->
+<section class="close-section">
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="line" style="background:rgba(255,255,255,0.2);"></span><span class="num" style="color:#DBE5EA;">ix.</span>The closing argument</div>
+    <h2>The next decade <em>is now.</em></h2>
+    <p class="lead">Healthcare in the Gulf is consolidating around scale, capital, and clinical capability. AHD has all three. What it has uniquely &mdash; the family ownership, the Mayo relationship, the thirty-year brand equity, the regional patient base, the satellite network, the executive infrastructure, the longevity platform, the medical school in development, the international ambition &mdash; combines into something no competitor can replicate within the window AHD has to act.</p>
+
+    <p class="lead" style="margin-top:24px;">The twelve projects described here are not a wishlist. They are the operating system AHD needs to convert these advantages into category leadership before competitors recognize what is at stake.</p>
+
+    <p class="lead" style="margin-top:24px; font-family: var(--serif); font-style: italic; color: #fff; font-size: 22px;">This is the work. This is the moment.</p>
+
+    <div class="close-line">
+      <div>
+        <div>Prepared by</div>
+        <div class="name">[Your name]</div>
+      </div>
+      <div class="col-r">
+        <div>For the office of</div>
+        <div class="name">Sherif Beshara</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
